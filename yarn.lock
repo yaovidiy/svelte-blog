@@ -1572,7 +1572,7 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-bits-ui@^1.0.0-next.76:
+bits-ui@^1.0.0-next.41, bits-ui@^1.0.0-next.76:
   version "1.0.0-next.76"
   resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-1.0.0-next.76.tgz#6966ce0ec25267d7bef1bc09535be717d1bb94e2"
   integrity sha512-BtTBlAQgdtA7l1V2EarM2QJlD8pkH4DAKACjCy4KMIVWMXdg15BGwALoXw1IWk4Xe4nCXI5Bz+lIB6nSgrzo6Q==
@@ -3382,6 +3382,19 @@ svelte-eslint-parser@^0.43.0:
     postcss "^8.4.39"
     postcss-scss "^4.0.9"
 
+svelte-sonner@^0.3.28:
+  version "0.3.28"
+  resolved "https://registry.yarnpkg.com/svelte-sonner/-/svelte-sonner-0.3.28.tgz#b24b3e7af924d5c50ca2e33cede1382283074abf"
+  integrity sha512-K3AmlySeFifF/cKgsYNv5uXqMVNln0NBAacOYgmkQStLa/UoU0LhfAACU6Gr+YYC8bOCHdVmFNoKuDbMEsppJg==
+
+svelte-toolbelt@^0.4.4:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/svelte-toolbelt/-/svelte-toolbelt-0.4.6.tgz#71f726f67d3ca0ab189b98a43bbdb4ae701cec98"
+  integrity sha512-k8OUvXBUifHZcAlWeY/HLg/4J0v5m2iOfOhn8fDmjt4AP8ZluaDh9eBFus9lFiLX6O5l6vKqI1dKL5wy7090NQ==
+  dependencies:
+    clsx "^2.1.1"
+    style-to-object "^1.0.8"
+
 svelte-toolbelt@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/svelte-toolbelt/-/svelte-toolbelt-0.7.0.tgz#ba27b64bc15ae5d8c714cff4a26dc3216364aaf5"
@@ -3609,6 +3622,14 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+vaul-svelte@^1.0.0-next.3:
+  version "1.0.0-next.3"
+  resolved "https://registry.yarnpkg.com/vaul-svelte/-/vaul-svelte-1.0.0-next.3.tgz#b3639ce793d027bba5605a1358462813e53e29a0"
+  integrity sha512-bqlCc28z1I6f23Sjv5W6UlNJdAPeX8tZbYZ3+ycOn/4hTvv2fo/5Le4bAX26RyFkpT6n5FXXCZN1/uNs8biyrQ==
+  dependencies:
+    bits-ui "^1.0.0-next.41"
+    svelte-toolbelt "^0.4.4"
 
 vite@^5.0.3:
   version "5.4.11"
