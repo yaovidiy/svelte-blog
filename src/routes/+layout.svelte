@@ -12,5 +12,7 @@
 	<Toaster />
 	<ModeWatcher />
 	<Header />
-	{@render children()}
+	<main class="max-w-7xl p-4 mx-auto">
+		{@render children()}
+	</main>
 </ParaglideJS>
