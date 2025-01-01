@@ -20,7 +20,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/articles" class="transition-colors hover:text-teal-400">
+					<a href="/article" class="transition-colors hover:text-teal-400">
 						{m.menu_articles()}
 					</a>
 				</li>

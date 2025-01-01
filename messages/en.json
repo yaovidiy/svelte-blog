@@ -3,5 +3,6 @@
   "hello_world": "Hello, {name} from en!",
   "menu_articles": "Articles",
   "menu_home": "Home",
-  "menu_about": "About Us"
+  "menu_about": "About Us",
+  "read_more": "Read More"
 }

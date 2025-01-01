@@ -1,4 +1,3 @@
-<article class="dark:prose-invert prose lg:prose-xl mx-auto">
 
 <img src="/assets/images/svelte-code.jpg" alt="Hero" class="aspect-video mb-4 rounded-xl" />
 
@@ -128,4 +127,3 @@ export default Counter;
 
 Якщо ця стаття зацікавила вас настільки, щоб самим глянути, що таке Svelte, будь ласка, зайдіть на їх <a href="https://svelte.dev/" target="_blank">сайт</a> та поклацайте все самі, вам сподобається.
 
-</article>

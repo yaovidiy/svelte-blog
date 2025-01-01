@@ -3,5 +3,6 @@
   "hello_world": "Hello, {name} from uk!",
   "menu_articles": "Статті",
   "menu_home": "Головна",
-  "menu_about": "Про нас"
+  "menu_about": "Про нас",
+  "read_more": "Читати далі"
 }
