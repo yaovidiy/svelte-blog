@@ -1,0 +1,20 @@
+<h1>Welcome, visitor!</h1>
+
+<p>
+    Currently, there is nothing interesting to show on the main page, but if you go to the articles
+    page, you will find the first article there.
+</p>
+
+<p>In the future, there will be a lot of interesting content, animations, and other cool things here.</p>
+
+<p>I plan to run my blog here, where I will share my thoughts, knowledge, and experience.</p>
+
+<p>
+    And if you found this page now, then you either truly searched for me on LinkedIn, or this is just a
+    coincidence.
+</p>
+
+<p>
+    In any case, in the near future, there will be a lot of interesting content here for both recruiters,
+    who I hope will find me interesting, and regular readers.
+</p>

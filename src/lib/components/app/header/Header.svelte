@@ -24,11 +24,11 @@
 						{m.menu_articles()}
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="/about" class="transition-colors hover:text-teal-400">
 						{m.menu_about()}
 					</a>
-				</li>
+				</li> -->
 			</ul>
 		</nav>
 		<div class="flex gap-4">
@@ -52,11 +52,11 @@
 							{m.menu_articles()}
 						</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="/about" class="transition-colors hover:text-teal-400">
 							{m.menu_about()}
 						</a>
-					</li>
+					</li> -->
 				</ul>
 				<div class="flex items-center gap-4">
 					<ThemeToggle />
