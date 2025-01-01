@@ -5,6 +5,8 @@
 	import { globalStore } from '$lib/stores/global.svelte';
 	import * as Sheet from '$lib/components/ui/sheet';
 	import { Menu } from 'lucide-svelte';
+
+	let openSheet = $state(false);
 </script>
 
 <header class="mx-auto flex max-w-7xl items-center justify-between p-4">
@@ -36,19 +38,27 @@
 			<LanguageToggle />
 		</div>
 	{:else}
-		<Sheet.Root>
+		<Sheet.Root bind:open={openSheet}>
 			<Sheet.Trigger class="text-2xl">
 				<Menu />
 			</Sheet.Trigger>
 			<Sheet.Content side="left">
-				<ul class="space-y-4 mb-4">
+				<ul class="mb-4 space-y-4">
 					<li>
-						<a href="/" class="transition-colors hover:text-teal-400">
+						<a
+							onclick={() => (openSheet = false)}
+							href="/"
+							class="transition-colors hover:text-teal-400"
+						>
 							{m.menu_home()}
 						</a>
 					</li>
 					<li>
-						<a href="/article" class="transition-colors hover:text-teal-400">
+						<a
+							onclick={() => (openSheet = false)}
+							href="/article"
+							class="transition-colors hover:text-teal-400"
+						>
 							{m.menu_articles()}
 						</a>
 					</li>
