@@ -74,10 +74,17 @@
 		@apply bg-background text-foreground;
 	}
 
-	.header {
+	.header,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		font-family: 'Lobster', serif;
 		font-weight: 400;
 		font-style: normal;
+		margin-block: 1.5rem;
 	}
 
 	.comment {
@@ -86,27 +93,52 @@
 		font-style: normal;
 	}
 
-	.prose {
+	p {
 		font-family: 'Philosopher', serif;
 		font-weight: 400;
 		font-style: normal;
+		margin-block: 1rem;
 	}
 
-	.prose-bold {
-		font-family: 'Philosopher', serif;
+	p a {
 		font-weight: 700;
-		font-style: normal;
+		text-decoration: underline;
 	}
 
-	.prose-italic {
-		font-family: 'Philosopher', serif;
+	blockquote p {
+		@apply border-l-4 border-accent p-4;
+		font-family: 'Great Vibes', serif;
 		font-weight: 400;
-		font-style: italic;
+		font-style: normal;
+		font-size: 1.5rem;
 	}
 
-	.prose-bold-italic {
-		font-family: 'Philosopher', serif;
-		font-weight: 700;
-		font-style: italic;
+	h1 {
+		@apply text-5xl;
+	}
+
+	h2 {
+		@apply text-4xl;
+	}
+
+	h3 {
+		@apply text-3xl;
+	}
+
+	h4 {
+		@apply text-2xl;
+	}
+
+	h5 {
+		@apply text-xl;
+	}
+
+	h6 {
+		@apply text-lg;
+	}
+
+	article {
+		max-width: 600px;
+		margin: 0 auto;
 	}
 }

@@ -1,0 +1,131 @@
+<article class="dark:prose-invert prose lg:prose-xl mx-auto">
+
+<img src="/assets/images/svelte-code.jpg" alt="Hero" class="aspect-video mb-4 rounded-xl" />
+
+# The Evolution of Svelte and a Bit of Its Backstory
+
+To start this blog with an article about what Svelte is, in my opinion, is the most logical option. Here, I will talk a little about why <a href="https://github.com/rich-harris" target="_blank">Rich Harris</a> decided to create it, what needs the first version addressed, and how the perspective on Svelte as a whole changed.
+
+### Why Did Rich Harris Decide to Create Svelte?
+
+<img src="https://avatars.githubusercontent.com/u/1162160?v=4" alt="Rich Harris" class="aspect-square mx-auto my-5 rounded-xl" />
+
+I think it’s best to start by explaining who <a href="https://github.com/rich-harris" target="_blank">Rich Harris</a> is.
+
+Svelte is not the first open-source project created by Rich. Before this, he created <a href="https://github.com/rollup/rollup" target="_blank">Rollup</a>, a popular JavaScript bundler that is still in demand among developers and has 25k stars on its GitHub repository.
+
+In addition, Rich worked as a journalist for major publications such as <a href="https://www.nytimes.com/by/rich-harris" target="_blank">The New York Times</a> and <a href="https://www.theguardian.com/profile/rich-harris" target="_blank">The Guardian</a>.
+
+With the latter, he was even part of the interactive team that won an Emmy Award.
+
+He was responsible for the data visualizations that were presented in the article, which in turn greatly influenced Svelte, as it comes with strong animation support out of the box.
+
+While working at The New York Times, he began his work on <a href="https://github.com/sveltejs/svelte" target="_blank">Svelte</a>, simply to make his work on articles easier.
+
+### What is Svelte?
+
+> "Write less, do more"
+
+This principle is still at the core of Svelte development. I really like this principle :)
+
+Digging deeper into what Svelte is, the main idea of the developer was to show that we don’t need to create complex abstractions to write a good interactive interface.
+
+And he succeeded, in my opinion. As Rich himself says, JavaScript is a bad language for describing interfaces, and that's true. It was never designed for this purpose.
+
+HTML, on the other hand, is the best language for describing interfaces.
+
+Thus, the focus was made on HTML, where JavaScript was merely an assistant for interactivity. In essence, Rich returned to the roots of web development, before the JavaScript framework boom.
+
+So, finally, we come to the answer to the question: what is Svelte?
+
+```svelte
+<script>
+	let name = $state('world');
+</script>
+
+<main>
+	<h1>Hello {name}!</h1>
+</main>
+
+<style>
+	h1 {
+		color: purple;
+	}
+</style>
+```
+
+In the simplest terms, it is a programming language that compiles to optimized HTML/CSS/JavaScript code.
+
+And as you can see from the example above, you are writing regular HTML/CSS/JavaScript, just with small additions of Svelte itself.
+
+What’s interesting is that all styles in components are automatically encapsulated, so if you're not a fan of Tailwind, you won’t have any problems writing your own styles, and you won’t need to manually encapsulate them.
+
+### What’s the Difference from Others?
+
+The difference lies in the approach to interactivity. The biggest frameworks now follow the Virtual DOM approach.
+
+Which, in essence, is an object in JavaScript that stores a copy of the real DOM, and each time the state changes, it compares the difference between the virtual and real DOM to make changes in the correct places without touching the entire DOM.
+
+In simple terms: re-render only the component that changed without touching the others. This is an effective approach, and it still works well today.
+
+Svelte, however, differs from others in that it tracks the values themselves. During compilation, it determines which reactive changes need to be tracked and modifies only those in the code.
+
+So, if we take a simple counter example and change its value, in React, we would see the entire component change, while in Svelte, only the value itself changes, and the component's layout remains unchanged.
+
+##### Counter Component in Svelte 5
+
+```svelte
+<script>
+	let counter = $state(0);
+</script>
+
+<div class="flex gap-4">
+	<button onclick={() => counter - 1}> - </button>
+	<span>
+		{counter}
+	</span>
+	<button onclick={() => counter + 1}> + </button>
+</div>
+```
+
+<br />
+
+##### Counter Component in React
+
+```jsx
+import React, { useState } from 'react';
+
+function Counter() {
+	const [counter, setCounter] = useState(0);
+
+	return (
+		<div className="flex gap-4">
+			<button onClick={() => setCounter(counter - 1)}>-</button>
+			<span>{counter}</span>
+			<button onClick={() => setCounter(counter + 1)}>+</button>
+		</div>
+	);
+}
+
+export default Counter;
+```
+
+This, in turn, gives us better performance. Yes, I know, it’s an Anglicism, but what can we do.
+
+### Runes — Is Svelte Now Like React?
+
+With the release of Runes, many have noticed a similarity between the Svelte syntax and React. At first, I noticed it too and was frustrated, but it’s still not the same.
+
+With Runes, the Svelte team removed the "magic" from the code when a regular `let` became reactive.
+
+They added much more support for templates, and now there is built-in TypeScript support out of the box.
+
+Overall, Svelte has come a long way from being a framework designed for data visualization in articles to becoming a universal, powerful tool that allows you to write code as plain JavaScript and enjoy it.
+
+We will talk about the new features in Svelte 5 in the next post, where I’ll share the most exciting changes for me.
+
+### Conclusion
+
+If this article has intrigued you enough to check out what Svelte is, please visit their <a href="https://svelte.dev/" target="_blank">website</a> and explore it yourself, you’ll like it.
+
+</article>
