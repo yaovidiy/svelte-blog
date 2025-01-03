@@ -79,11 +79,11 @@ Svelte ж, на відміну від інших, слідкує саме за �
 </script>
 
 <div class="flex gap-4">
-	<button onclick={() => counter - 1}> - </button>
+	<button onclick={() => counter -= 1}> - </button>
 	<span>
 		{counter}
 	</span>
-	<button onclick={() => counter + 1}> + </button>
+	<button onclick={() => counter += 1}> + </button>
 </div>
 ```
 

@@ -79,11 +79,11 @@ So, if we take a simple counter example and change its value, in React, we would
 </script>
 
 <div class="flex gap-4">
-	<button onclick={() => counter - 1}> - </button>
+	<button onclick={() => counter -= 1}> - </button>
 	<span>
 		{counter}
 	</span>
-	<button onclick={() => counter + 1}> + </button>
+	<button onclick={() => counter += 1}> + </button>
 </div>
 ```
 
