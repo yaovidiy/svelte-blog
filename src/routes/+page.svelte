@@ -9,6 +9,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>My HomePage</title>
+</svelte:head>
+
 <article>
   {#if HomePageContent}
     <HomePageContent.default />

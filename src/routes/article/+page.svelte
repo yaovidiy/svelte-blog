@@ -29,6 +29,9 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Articles</title>
+</svelte:head>
 <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 	{#each articles[languageTag()] as article}
 		<div class="rounded-lg border border-gray-200 p-4 dark:border-gray-800">

@@ -12,6 +12,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>{page.params.slug}</title>
+</svelte:head>
+
 <article>
 	{#if Content}
 		<Content.default />
