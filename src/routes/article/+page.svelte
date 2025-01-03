@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { languageTag, type AvailableLanguageTag } from '$lib/paraglide/runtime';
 	import * as m from '$lib/paraglide/messages';
+	import { fly } from 'svelte/transition';
 
 	type ArticleDesctiption = {
 		title: string;
@@ -34,7 +35,10 @@
 </svelte:head>
 <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 	{#each articles[languageTag()] as article}
-		<div class="rounded-lg border border-gray-200 p-4 dark:border-gray-800">
+		<div
+			transition:fly={{ x: 100 }}
+			class="rounded-lg border border-gray-200 p-4 dark:border-gray-800"
+		>
 			<h2 class="text-xl font-bold">{article.title}</h2>
 			<p class="text-gray-500 dark:text-gray-400">{article.shortDescription}</p>
 			<p class="text-xs text-gray-500 dark:text-gray-400">{article.createdAt}</p>
