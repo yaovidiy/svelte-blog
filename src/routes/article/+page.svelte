@@ -25,6 +25,12 @@
 				slug: 'WhatIsSvelte',
 				createdAt: '01-01-2025',
 				shortDescription: 'Всі десь починають і це мій початок для роботи над цим блогом'
+			},
+			{
+				title: 'Що таке Runes',
+				slug: 'WhatIsRunes',
+				createdAt: '08-03-2025',
+				shortDescription: 'Runes - це новий підхід до роботи зі Svelte та покращення його функціональності'
 			}
 		]
 	};
@@ -33,7 +39,7 @@
 <svelte:head>
 	<title>Articles</title>
 </svelte:head>
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+<section class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 	{#each articles[languageTag()] as article}
 		<div
 			transition:fly={{ x: 100 }}
